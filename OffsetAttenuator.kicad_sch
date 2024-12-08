@@ -526,6 +526,175 @@
 				)
 			)
 		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -1525,6 +1694,12 @@
 		(uuid "1c8559a2-3510-431b-8ecf-110ab93effea")
 	)
 	(junction
+		(at 109.22 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20cac1f5-d313-4279-9a7a-5802df3f5c4b")
+	)
+	(junction
 		(at 152.4 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1780,6 +1955,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 111.76) (xy 81.28 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caa649dc-ab1d-4634-871c-dbc85666a0f7")
+	)
+	(wire
+		(pts
 			(xy 163.83 138.43) (xy 163.83 127)
 		)
 		(stroke
@@ -1850,6 +2035,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 138.43) (xy 123.19 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f564c982-21dd-494b-855b-9172cbc5ec3c")
+	)
+	(wire
+		(pts
 			(xy 151.13 154.94) (xy 168.91 154.94)
 		)
 		(stroke
@@ -1857,6 +2052,108 @@
 			(type default)
 		)
 		(uuid "f834983a-e215-44c6-bf4c-bd0622670b4c")
+	)
+	(text "Circuit borrowed from this project: https://www.w9dup.org/test_eqpt_files/attenuator_project_2010_may.pdf"
+		(exclude_from_sim no)
+		(at 67.564 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5ffecc43-fbe3-4390-807a-1f281910de7b")
+	)
+	(label "+5V"
+		(at 81.28 111.76 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "434aaf58-6842-450a-9ea0-47d96b3a0021")
+	)
+	(label "+5V"
+		(at 138.43 135.89 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0ce1782-ee03-489f-93a1-09fe141334ba")
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 81.28 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "115eb560-6cde-4af9-b036-49aee2124c96")
+		(property "Reference" "D2"
+			(at 84.201 131.1853 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 84.201 133.6096 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 81.28 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e31d022d-9b74-47b5-ba03-5935644631ab")
+		)
+		(pin "1"
+			(uuid "330e1411-135d-4799-a8ce-8cb5132df00c")
+		)
+		(instances
+			(project ""
+				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
@@ -1939,6 +2236,76 @@
 			(project ""
 				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 81.28 123.19 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36385508-0f40-4618-82c6-8a362a9c46ce")
+		(property "Reference" "R5"
+			(at 83.058 121.9778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220"
+			(at 83.058 124.4021 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.058 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 81.28 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4463a934-9dbb-4381-bb7a-3553d8f11a7c")
+		)
+		(pin "1"
+			(uuid "a6edbd11-3c85-4969-9e62-a5b59b1bf83c")
+		)
+		(instances
+			(project "OffsetAttenuator"
+				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -2029,7 +2396,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "2.2K"
 			(at 154.178 102.8121 0)
 			(effects
 				(font
@@ -2098,7 +2465,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" ".0047uF"
 			(at 140.97 123.1208 90)
 			(effects
 				(font
@@ -2232,7 +2599,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Potentiometer"
+		(property "Value" "5K"
 			(at 133.35 118.1904 90)
 			(effects
 				(font
@@ -2303,7 +2670,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "470pF"
 			(at 167.64 91.3708 90)
 			(effects
 				(font
@@ -2364,15 +2731,15 @@
 		(fields_autoplaced yes)
 		(uuid "9c5b452f-06bc-425f-895c-eef413d42ddf")
 		(property "Reference" "X1"
-			(at 162.2539 132.285 0)
+			(at 159.5929 132.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "CXO_DIP14"
-			(at 162.2539 134.7093 0)
+		(property "Value" "4MHz"
+			(at 159.5929 134.7093 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2445,7 +2812,7 @@
 				)
 			)
 		)
-		(property "Value" "Battery"
+		(property "Value" "Battery 9V"
 			(at 118.8085 151.0608 90)
 			(effects
 				(font
@@ -2513,7 +2880,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "4.7K"
 			(at 116.84 124.2638 90)
 			(effects
 				(font
@@ -2650,7 +3017,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "2.2K"
 			(at 135.128 102.8121 0)
 			(effects
 				(font
@@ -2719,7 +3086,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "470pF"
 			(at 120.65 91.3708 90)
 			(effects
 				(font
@@ -2837,6 +3204,72 @@
 			(project ""
 				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d665c396-1dc1-4a9b-a733-5a46336224cc")
+		(property "Reference" "#PWR03"
+			(at 81.28 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 138.7531 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4925d10-f047-4564-a0cb-33c0a5d5d104")
+		)
+		(instances
+			(project ""
+				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
