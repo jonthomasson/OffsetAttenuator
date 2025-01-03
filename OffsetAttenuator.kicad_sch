@@ -1712,10 +1712,22 @@
 		(uuid "911f3003-e13e-45d7-b1bf-f6cb2dcc1150")
 	)
 	(junction
+		(at 110.49 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c92be08d-2a6a-4ae4-8f53-509e1d823f3c")
+	)
+	(junction
 		(at 127 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc8927f6-61f5-47ad-90b9-043dd17fbfff")
+	)
+	(junction
+		(at 177.8 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8ca9471-1955-44cb-b5fa-fd453dd4de26")
 	)
 	(junction
 		(at 151.13 154.94)
@@ -1755,6 +1767,26 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 83.82) (xy 110.49 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e4e2fd3-724a-42cc-a424-be9de676cec4")
+	)
+	(wire
+		(pts
+			(xy 177.8 95.25) (xy 182.88 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "250692bf-6084-483b-901a-3a9524422683")
+	)
+	(wire
+		(pts
 			(xy 127 127) (xy 137.16 127)
 		)
 		(stroke
@@ -1775,7 +1807,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 95.25) (xy 116.84 95.25)
+			(xy 104.14 95.25) (xy 110.49 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1822,6 +1854,16 @@
 			(type default)
 		)
 		(uuid "6d955d9e-56c3-486e-93c2-936fbb36250c")
+	)
+	(wire
+		(pts
+			(xy 110.49 95.25) (xy 116.84 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ec62bf2-2dfb-4b79-9078-b11ca5f9dfbf")
 	)
 	(wire
 		(pts
@@ -1915,7 +1957,17 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 95.25) (xy 182.88 95.25)
+			(xy 177.8 83.82) (xy 177.8 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9132b90-a090-4cf2-8c07-35f98bc03541")
+	)
+	(wire
+		(pts
+			(xy 171.45 95.25) (xy 177.8 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1995,6 +2047,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 83.82) (xy 177.8 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d95a524d-974e-41f2-942c-b2ad830303bc")
+	)
+	(wire
+		(pts
 			(xy 127 113.03) (xy 127 127)
 		)
 		(stroke
@@ -2052,6 +2114,16 @@
 			(type default)
 		)
 		(uuid "f834983a-e215-44c6-bf4c-bd0622670b4c")
+	)
+	(wire
+		(pts
+			(xy 110.49 83.82) (xy 110.49 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa7ea63f-bdee-40ba-8d98-a5f4390ac7bc")
 	)
 	(text "Circuit borrowed from this project: https://www.w9dup.org/test_eqpt_files/attenuator_project_2010_may.pdf"
 		(exclude_from_sim no)
@@ -3137,6 +3209,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 142.24 83.82 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1e63373-446a-426c-9b02-29fdc9e8be9c")
+		(property "Reference" "SW2"
+			(at 142.24 79.2945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BYPASS"
+			(at 142.24 81.7188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 142.24 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "44dbdb3b-8d42-47c6-8d74-53d0419ac7d6")
+		)
+		(pin "1"
+			(uuid "852ba41f-c170-4735-9f68-1a61bb9f6600")
+		)
+		(instances
+			(project "OffsetAttenuator"
+				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Linear:L7805")
 		(at 130.81 138.43 0)
 		(unit 1)
@@ -3294,7 +3434,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_SPST"
+		(property "Value" "POWER"
 			(at 110.363 144.7221 90)
 			(effects
 				(font
@@ -3410,76 +3550,6 @@
 			(project "OffsetAttenuator"
 				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 100.33 367.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f785e9f9-8ba2-4727-9b04-b3e8035a07fd")
-		(property "Reference" "R2"
-			(at 102.108 365.8178 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 102.108 368.2421 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 98.552 367.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 367.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 100.33 367.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a39d4939-af43-4c80-b072-a49e2b4b99f7")
-		)
-		(pin "1"
-			(uuid "b6e0b1b5-77ff-4a56-a1fe-db007f6e049c")
-		)
-		(instances
-			(project "OffsetAttenuator"
-				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
-					(reference "R2")
 					(unit 1)
 				)
 			)
