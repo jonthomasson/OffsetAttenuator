@@ -1,0 +1,134 @@
+(footprint "CONBNC002"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "223c76a1-2af3-4a3e-994b-7c322352ab8e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "CONBNC002"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "41dd3223-9238-4bdf-a9dd-7e5aaed135b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ad4d74e8-5ed2-4a78-8710-dc284ce88b2d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "72461854-cac2-41d7-8963-9cfbbaa28c3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c6b0e12-4e96-4bc6-a50b-3f8c095525f2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -2.4 -9.67)
+		(end 12.5 5.23)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "0706985e-ef6a-45e2-a505-dcc18853667a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f6b9c04a-c591-44bf-95ff-79fa3a8a494a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0.02)
+		(size 2 2)
+		(drill 2)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "07023512-c628-47c7-a74e-27bcfd534a44")
+	)
+	(pad "" np_thru_hole circle
+		(at 10.14 0.01)
+		(size 2 2)
+		(drill 2)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "c7d3f2df-6261-480d-9161-29f2721b035b")
+	)
+	(pad "1" thru_hole circle
+		(at 5.06 5.09)
+		(size 2 2)
+		(drill 0.89)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9969d2bd-faef-4390-8dd5-f4541158ef46")
+	)
+	(pad "2" thru_hole circle
+		(at 2.51 5.08)
+		(size 2 2)
+		(drill 0.89)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "802e791e-cb00-4d2a-a295-ba8a5be10cbc")
+	)
+	(model "${KIPRJMOD}/lib/CONBNC002.step"
+		(offset
+			(xyz 5 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
+	)
+)
