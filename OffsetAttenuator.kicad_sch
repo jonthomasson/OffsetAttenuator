@@ -2714,7 +2714,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TRIM_3310Y-001-502L"
 			(at 133.35 113.03 0)
 			(effects
 				(font
@@ -2927,7 +2927,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Library:1294PCB_29P57X53P85_KEY"
 			(at 117.856 154.94 90)
 			(effects
 				(font
@@ -3269,7 +3269,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:SWT3"
 			(at 142.24 83.82 0)
 			(effects
 				(font
@@ -3478,7 +3478,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:SWT3"
 			(at 109.22 143.51 0)
 			(effects
 				(font

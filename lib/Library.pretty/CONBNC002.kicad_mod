@@ -1,7 +1,7 @@
 (footprint "CONBNC002"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
@@ -20,19 +20,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "41dd3223-9238-4bdf-a9dd-7e5aaed135b4")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "ad4d74e8-5ed2-4a78-8710-dc284ce88b2d")
 		(effects
 			(font
 				(size 1 1)
@@ -74,7 +61,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "0706985e-ef6a-45e2-a505-dcc18853667a")
 	)
@@ -120,6 +107,7 @@
 		(remove_unused_layers no)
 		(uuid "802e791e-cb00-4d2a-a295-ba8a5be10cbc")
 	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/lib/CONBNC002.step"
 		(offset
 			(xyz 5 0 0)
