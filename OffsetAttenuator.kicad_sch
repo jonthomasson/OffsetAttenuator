@@ -2853,7 +2853,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Oscillator:Oscillator_DIP-14"
+		(property "Footprint" "Library:OSC_ECS-2100AX-040"
 			(at 162.56 147.32 0)
 			(effects
 				(font
