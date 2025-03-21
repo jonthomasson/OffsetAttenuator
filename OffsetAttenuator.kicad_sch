@@ -1166,50 +1166,40 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Oscillator:CXO_DIP14"
+		(symbol "OSC:ECS-2100AX-040"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "X"
-				(at -5.08 6.35 0)
+			(property "Reference" "Y1"
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "CXO_DIP14"
-				(at 1.27 -6.35 0)
+			(property "Value" "ECS-2100AX-040"
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Oscillator:Oscillator_DIP-14"
-				(at 11.43 -8.89 0)
+			(property "Footprint" "ECS-2100AX-040:OSC_ECS-2100AX-040"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf"
-				(at -2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Crystal Clock Oscillator, DIP14-style metal package"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1218,7 +1208,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Crystal Clock Oscillator"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1227,110 +1217,98 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Oscillator*DIP*14*"
+			(property "PARTREV" "N/A"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(symbol "CXO_DIP14_0_1"
+			(property "STANDARD" "Manufacturer Recommendation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "ECS Inc."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "ECS-2100AX-040_0_0"
 				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
+					(start -12.7 2.54)
+					(end 1.27 -7.62)
 					(stroke
-						(width 0.254)
+						(width 0.127)
 						(type default)
 					)
 					(fill
 						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.905 -0.635) (xy -1.27 -0.635) (xy -1.27 0.635) (xy -0.635 0.635) (xy -0.635 -0.635) (xy 0 -0.635)
-						(xy 0 0.635) (xy 0.635 0.635) (xy 0.635 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CXO_DIP14_1_1"
 				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "EN"
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "+VDC"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "Vcc"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "8"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 6.35 0 180)
+					(length 5.08)
+					(name "OUTPUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 6.35 -5.08 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1776,12 +1754,6 @@
 		(color 0 0 0 0)
 		(uuid "d8ca9471-1955-44cb-b5fa-fd453dd4de26")
 	)
-	(junction
-		(at 151.13 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df6399f1-9e2c-4d17-b84f-9c9b8dc0d09d")
-	)
 	(wire
 		(pts
 			(xy 130.81 146.05) (xy 130.81 154.94)
@@ -1791,16 +1763,6 @@
 			(type default)
 		)
 		(uuid "03ac0eab-6df4-4874-8bf3-5edc98dad84b")
-	)
-	(wire
-		(pts
-			(xy 151.13 146.05) (xy 151.13 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0aead993-7667-4d7b-8a0f-5f0b31233778")
 	)
 	(wire
 		(pts
@@ -1854,6 +1816,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 127) (xy 163.83 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d426f55-a206-4e9e-897d-fd37e4cd4329")
+	)
+	(wire
+		(pts
 			(xy 104.14 95.25) (xy 110.49 95.25)
 		)
 		(stroke
@@ -1861,6 +1833,16 @@
 			(type default)
 		)
 		(uuid "4f161994-458c-4cd8-976e-15f95c4447e8")
+	)
+	(wire
+		(pts
+			(xy 138.43 138.43) (xy 139.7 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b5ff9d8-0fd6-4cca-8530-83789b77c8dc")
 	)
 	(wire
 		(pts
@@ -1874,16 +1856,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 130.81) (xy 151.13 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67631f62-c28b-4547-9c4a-44dcc032f862")
-	)
-	(wire
-		(pts
 			(xy 152.4 95.25) (xy 163.83 95.25)
 		)
 		(stroke
@@ -1891,16 +1863,6 @@
 			(type default)
 		)
 		(uuid "6a3f96cd-fa9e-4b30-be87-25d4d2282b21")
-	)
-	(wire
-		(pts
-			(xy 158.75 138.43) (xy 163.83 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d955d9e-56c3-486e-93c2-936fbb36250c")
 	)
 	(wire
 		(pts
@@ -1944,23 +1906,13 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 154.94) (xy 130.81 154.94)
+			(xy 130.81 154.94) (xy 168.91 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "73b9ef89-456c-4469-a3a9-d59ec9906c60")
-	)
-	(wire
-		(pts
-			(xy 138.43 138.43) (xy 138.43 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c457442-f9db-4c48-8bad-18fb9b115d6f")
 	)
 	(wire
 		(pts
@@ -2064,16 +2016,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 138.43) (xy 163.83 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb534ecd-9ba2-4bb9-ba51-c51327470492")
-	)
-	(wire
-		(pts
 			(xy 152.4 95.25) (xy 147.32 95.25)
 		)
 		(stroke
@@ -2154,16 +2096,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 154.94) (xy 168.91 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f834983a-e215-44c6-bf4c-bd0622670b4c")
-	)
-	(wire
-		(pts
 			(xy 110.49 83.82) (xy 110.49 95.25)
 		)
 		(stroke
@@ -2183,12 +2115,12 @@
 		(uuid "434aaf58-6842-450a-9ea0-47d96b3a0021")
 	)
 	(label "+5V"
-		(at 138.43 135.89 90)
+		(at 139.7 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "b0ce1782-ee03-489f-93a1-09fe141334ba")
 	)
@@ -2760,6 +2692,107 @@
 		)
 	)
 	(symbol
+		(lib_id "OSC:ECS-2100AX-040")
+		(at 157.48 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "74eb0fda-916a-4072-a25e-412d0f84c8f3")
+		(property "Reference" "Y1"
+			(at 151.384 132.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ECS-2100AX-040"
+			(at 151.892 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:OSC_ECS-2100AX-040"
+			(at 157.48 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "N/A"
+			(at 157.48 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendation"
+			(at 157.48 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "ECS Inc."
+			(at 157.48 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "930c044c-4b5b-4c49-a209-324ffa0ed855")
+		)
+		(pin "5"
+			(uuid "72b1f3a0-bcbe-40a2-8e43-432eef2aac6c")
+		)
+		(pin "4"
+			(uuid "867ef1b7-441c-4ccd-ac87-61e246fd9a3d")
+		)
+		(instances
+			(project ""
+				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 167.64 95.25 90)
 		(unit 1)
@@ -2822,80 +2855,6 @@
 			(project "OffsetAttenuator"
 				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Oscillator:CXO_DIP14")
-		(at 151.13 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c5b452f-06bc-425f-895c-eef413d42ddf")
-		(property "Reference" "X1"
-			(at 159.5929 132.285 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4MHz"
-			(at 159.5929 134.7093 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:OSC_ECS-2100AX-040"
-			(at 162.56 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf"
-			(at 148.59 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Crystal Clock Oscillator, DIP14-style metal package"
-			(at 151.13 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7ba377d6-3f81-4069-9b36-82bcffc59b12")
-		)
-		(pin "14"
-			(uuid "7bdcc5c9-4157-4e56-ab0a-e18457ebb587")
-		)
-		(pin "8"
-			(uuid "790d50ff-6a24-428a-a065-2e60d165ea2f")
-		)
-		(pin "7"
-			(uuid "658d777f-fdab-4c37-bff0-0173bc89c476")
-		)
-		(instances
-			(project ""
-				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
-					(reference "X1")
 					(unit 1)
 				)
 			)
@@ -3032,6 +2991,72 @@
 			(project "OffsetAttenuator"
 				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 163.83 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af7b7032-5938-4ae7-a7f7-aa7b00f07038")
+		(property "Reference" "#PWR04"
+			(at 163.83 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74555116-d57b-4219-b59b-d3a0ceda2180")
+		)
+		(instances
+			(project ""
+				(path "/1ad55a5d-7440-488e-8560-ee9e41fda5dc"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
