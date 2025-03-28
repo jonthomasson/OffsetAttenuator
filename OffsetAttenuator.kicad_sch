@@ -2886,7 +2886,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:1294PCB_29P57X53P85_KEY"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 117.856 154.94 90)
 			(effects
 				(font
