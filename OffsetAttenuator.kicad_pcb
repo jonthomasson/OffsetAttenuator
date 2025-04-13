@@ -4584,6 +4584,32 @@
 		(layer "Edge.Cuts")
 		(uuid "91dc1c11-5445-40dc-9dce-2d51576a4a08")
 	)
+	(gr_text "https://www.w9dup.org/test_eqpt_files/attenuator_project_2010_may.pdf"
+		(at 36.6 78.3 0)
+		(layer "F.SilkS")
+		(uuid "026e41c6-b441-4aef-bc81-b207a4f5d133")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "FoxHunt Offset Attenuator"
+		(at 64.2 24 0)
+		(layer "F.SilkS")
+		(uuid "ebe14969-63dc-4722-a1a1-200bd44e4eb8")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 73.04 54.04)
 		(end 75.62 51.46)
